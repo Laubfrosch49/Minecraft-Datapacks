@@ -1,0 +1,24 @@
+{
+	"display": {
+		"icon": {
+			"id": "minecraft:blue_bed"
+		},
+		"title": "Multiplayer Sleep Notifier                      ",
+		"description": [
+			{"text":"This datapack enhances the multiplayer experience by notifying players when someone goes to sleep and how many players still need to sleep to skip the night. Perfect for servers, it keeps everyone informed and makes managing night cycles more intuitive.\n\n","color":"blue"},
+			{"text":"Enter ","color":"#16e0b5"},
+			{"text":"/trigger sleep","color":"red"},
+			{"text":" to view the current sleep percentage and the total number of nights skipped.\n\n","color":"#16e0b5"},
+			{"text":"Optimized for Version 1.21.3-57\n","color":"dark_gray","italic":true},
+			{"text":"Datapack Version v3.0.0","color":"dark_gray","italic":true}
+		],
+		"show_toast": true,
+		"announce_to_chat": false
+	},
+    "parent": "laubfrosch49:utility",
+	"criteria": {
+		"tick": {
+			"trigger": "minecraft:tick"
+		}
+	}
+}
