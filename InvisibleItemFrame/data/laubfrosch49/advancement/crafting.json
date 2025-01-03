@@ -1,0 +1,21 @@
+	{
+	"display": {
+		"icon": {
+			"id": "minecraft:crafting_table",
+			"components": {
+				"minecraft:enchantment_glint_override": true
+			}
+		},
+		"title": "Crafting Datapacks",
+		"description": "",
+		"frame": "goal",
+		"show_toast": false,
+		"announce_to_chat": false
+	},
+    "parent": "laubfrosch49:root",
+	"criteria": {
+		"tick": {
+			"trigger": "minecraft:tick"
+		}
+	}
+}

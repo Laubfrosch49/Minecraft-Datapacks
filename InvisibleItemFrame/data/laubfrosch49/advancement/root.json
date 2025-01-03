@@ -1,0 +1,36 @@
+{
+	"display": {
+		"icon": {
+			"id": "minecraft:player_head",
+			"components": {
+				"minecraft:profile": {
+					"id": [
+						1787187779,
+						-2078586747,
+						-1785554769,
+						1357377524
+					]
+				}
+			}
+		},
+		"title": " Laubfrosch49's Datapacks ",
+		"frame": "challenge",
+		"description": [
+			{"text":"Datapacks made by ","color":"#16e0b5"},
+			{"text":"Laubfrosch49\n\n","color":"#15db40"},
+			{"text":"Enter to uninstall all:\n","color":"red"},
+			{"text":"/function #laubfrosch49:uninstall\n\n","color":"#FF0000"},
+			{"text":"Made with ❤","color":"dark_gray"},
+			{"text":" • ","color":"dark_gray"},
+			{"text":"Copyright 2025 ©","color":"dark_gray"}
+		],
+		"background": "minecraft:textures/block/deepslate_tiles.png",
+		"show_toast": false,
+		"announce_to_chat": false
+	},
+	"criteria": {
+		"tick": {
+			"trigger": "minecraft:tick"
+		}
+	}
+}

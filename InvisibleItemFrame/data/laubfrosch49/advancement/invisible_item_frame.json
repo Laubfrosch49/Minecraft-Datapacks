@@ -1,0 +1,30 @@
+{
+	"display": {
+		"icon": {
+			"id": "minecraft:glow_item_frame"
+		},
+		"title": "Invisible Item Frame                      ",
+		"description": [
+			{"text":"Adds crafting recipes for invisible item frames. Combine a ","color":"blue"},
+			{"translate":"item.minecraft.item_frame","color":"#d4983d"},
+			{"text":" or a ","color":"blue"},
+			{"translate":"item.minecraft.glow_item_frame","color":"#d4983d"},
+			{"text":" with a ","color":"blue"},
+			{"translate":"item.minecraft.phantom_membrane","color":"#daedfc"},
+			{"text":" to create an invisible variant.\n\n","color":"blue"},
+			{"text":"Using a ","color":"#16e0b5"},
+			{"translate":"block.minecraft.soul_torch","color":"#f35050"},
+			{"text":", you can reveal nearby invisible item frames.\n\n","color":"#16e0b5"},
+			{"text":"Optimized for Version 1.21.3-57\n","color":"dark_gray","italic":true},
+			{"text":"Datapack Version v1.0.0","color":"dark_gray","italic":true}
+		],
+		"show_toast": true,
+		"announce_to_chat": false
+	},
+    "parent": "laubfrosch49:crafting",
+	"criteria": {
+		"tick": {
+			"trigger": "minecraft:tick"
+		}
+	}
+}
