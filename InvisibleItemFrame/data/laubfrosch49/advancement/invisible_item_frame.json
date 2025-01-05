@@ -16,7 +16,7 @@
 			{"translate":"block.minecraft.soul_torch","color":"#f35050"},
 			{"text":", you can reveal nearby invisible item frames.\n\n","color":"#16e0b5"},
 			{"text":"Optimized for Version 1.21.3-57\n","color":"dark_gray","italic":true},
-			{"text":"Datapack Version v1.0.0","color":"dark_gray","italic":true}
+			{"text":"Datapack Version v1.0.1","color":"dark_gray","italic":true}
 		],
 		"show_toast": true,
 		"announce_to_chat": false
