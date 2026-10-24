@@ -9,8 +9,8 @@
 			{"text":"Enter ","color":"#16e0b5"},
 			{"text":"/trigger sleep","color":"red"},
 			{"text":" to view the current sleep percentage and the total number of nights skipped.\n\n","color":"#16e0b5"},
-			{"text":"Optimized for Version 1.21.3-57\n","color":"dark_gray","italic":true},
-			{"text":"Datapack Version v3.0.1","color":"dark_gray","italic":true}
+			{"text":"Optimized for Version 26.3-121\n","color":"dark_gray","italic":true},
+			{"text":"Datapack Version v3.0.2","color":"dark_gray","italic":true}
 		],
 		"show_toast": true,
 		"announce_to_chat": false

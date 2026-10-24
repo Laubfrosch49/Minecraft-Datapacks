@@ -1,12 +1,12 @@
 #Multiplayer Sleep Notifier for Minecraft
 #Code developed by Laubfrosch49
-#Copyright 2025 ©
+#Copyright 2026 ©
 
 #This file is executed every 10 ticks
 schedule function sleepnotifier:slowtick 10t
 
 #Get playersSleepingPercentage from the gamerule 
-execute store result score sleep% sleepNotifier run gamerule playersSleepingPercentage
+execute store result score sleep% sleepNotifier run gamerule minecraft:players_sleeping_percentage
 
 #Get Player Info
 execute in minecraft:overworld store result score playerCount sleepNotifier if entity @a[distance=0..]

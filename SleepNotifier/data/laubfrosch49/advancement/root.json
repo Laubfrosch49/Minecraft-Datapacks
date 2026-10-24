@@ -22,9 +22,9 @@
 			{"text":"/function #laubfrosch49:uninstall\n\n","color":"#FF0000"},
 			{"text":"Made with ❤","color":"dark_gray"},
 			{"text":" • ","color":"dark_gray"},
-			{"text":"Copyright 2025 ©","color":"dark_gray"}
+			{"text":"Copyright 2026 ©","color":"dark_gray"}
 		],
-		"background": "minecraft:textures/block/deepslate_tiles.png",
+		"background": "minecraft:block/deepslate_tiles",
 		"show_toast": false,
 		"announce_to_chat": false
 	},

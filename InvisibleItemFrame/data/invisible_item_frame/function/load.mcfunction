@@ -1,6 +1,6 @@
 #Invisible Item Frame for Minecraft
 #Code developed by Laubfrosch49
-#Copyright 2025 ©
+#Copyright 2026 ©
 
 #This file is executed every reload
 

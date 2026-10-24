@@ -16,8 +16,8 @@
                 "Tags": ["InvisibleItemFrame"]
             },
             "minecraft:lore" : [
-                '{text:"Invisible when placed.",color:"#00FF80",italic:false}',
-                '{text:"Visible again after destruction!", color:dark_gray,italic:true}'
+                {"text":"Invisible when placed.","color":"#00FF80","italic":false},
+                {"text":"Visible again after destruction!","color":"dark_gray","italic":true}
             ]
         }
     }

@@ -1,6 +1,7 @@
 {
 	"pack": {
-		"pack_format": 57,
-		"description": [{"text":"Invisible Item Frame","color":"green"},{"text":" v1.0.1-57-1.21.3","color":"gray"},{"text":"\nMade by Laubfrosch49","color":"red"}]
+		"min_format": 121,
+		"max_format": 121,
+		"description": [{"text":"Invisible Item Frame","color":"green"},{"text":" v1.0.2-121-26.3","color":"gray"},{"text":"\nMade by Laubfrosch49","color":"red"}]
 	}
 }
