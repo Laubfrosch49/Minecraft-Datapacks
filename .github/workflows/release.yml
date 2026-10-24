@@ -39,7 +39,7 @@ jobs:
           grep -h "v$VERSION" $FILES
 
           # The zip must be named exactly like the folder: uninstall.mcfunction disables "file/$PACK"
-          (cd "$PACK" && zip -r "../$PACK.zip" .)
+          (cd "$PACK" && zip -r "../$PACK.zip" . -x README.md)
           echo "PACK=$PACK" >> "$GITHUB_ENV"
 
       - name: Create release
