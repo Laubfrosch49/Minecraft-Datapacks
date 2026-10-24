@@ -1,0 +1,50 @@
+name: Release
+
+# Tag format: <datapack>-v<version>, e.g. sleepnotifier-v3.0.3 or invisibleitemframe-v1.0.3
+on:
+  push:
+    tags:
+      - "sleepnotifier-v*"
+      - "invisibleitemframe-v*"
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Make sure the tag is on main
+        run: |
+          git merge-base --is-ancestor "$GITHUB_SHA" origin/main \
+            || { echo "::error::Tag $GITHUB_REF_NAME is not on main"; exit 1; }
+
+      - name: Build datapack zip
+        run: |
+          TAG="$GITHUB_REF_NAME"
+          VERSION="${TAG##*-v}"
+          case "${TAG%%-v*}" in
+            sleepnotifier)     PACK=SleepNotifier ;;
+            invisibleitemframe) PACK=InvisibleItemFrame ;;
+            *) echo "::error::Unknown datapack in tag $TAG"; exit 1 ;;
+          esac
+
+          # Write the tag's version into the pack description and the advancement text
+          FILES="$PACK/pack.mcmeta $(grep -rl 'Datapack Version' "$PACK/data")"
+          sed -i -E "s/v[0-9]+\.[0-9]+\.[0-9]+/v$VERSION/" $FILES
+          grep -h "v$VERSION" $FILES
+
+          # The zip must be named exactly like the folder: uninstall.mcfunction disables "file/$PACK"
+          (cd "$PACK" && zip -r "../$PACK.zip" .)
+          echo "PACK=$PACK" >> "$GITHUB_ENV"
+
+      - name: Create release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh release create "$GITHUB_REF_NAME" "$PACK.zip" \
+            --title "$PACK ${GITHUB_REF_NAME##*-}" --generate-notes
